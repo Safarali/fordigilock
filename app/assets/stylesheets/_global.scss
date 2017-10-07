@@ -1,0 +1,26 @@
+/* Colors */
+$default-color: #474646;
+$purple: #9870FC;
+$white: #fff;
+
+
+/* General Settings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html * {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: $default-color;
+}
+
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: $default-color;
+}

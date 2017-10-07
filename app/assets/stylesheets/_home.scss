@@ -1,0 +1,47 @@
+/* Hero Image */
+header.hero-img {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('hero.jpg');
+  background-position: 35% 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border-top: 1px solid white;
+  position: relative;
+}
+
+/* Hero Box */
+.hero-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  h1 {
+    font-size: 250%;
+    color: $white;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: $white;
+    font-size: 80%;
+    letter-spacing: 1px;
+    border: 2px;
+    padding: 12px 30px;
+    border-radius: 5px;
+    background-color: $purple;
+    text-transform: uppercase;
+    transition: background-color 0.8s;
+
+    &:hover {
+      background-color: #a98af7;
+    }
+  }
+
+  i {
+    color: $white;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+}

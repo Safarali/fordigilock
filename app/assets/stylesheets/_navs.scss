@@ -1,0 +1,49 @@
+/* Top Nav */
+
+nav {
+  height: 60px;
+  overflow: hidden;
+
+  .logo {
+    height: 45px;
+    width: 45px;
+    background-color: $purple;
+    margin-top: 7px;
+    padding-left: 12px;
+    font-size: 150%;
+    color: $white;
+    border-radius: 50%;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    margin-top: 14px;
+
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+
+      &:after {
+        display: block;
+        content: ' ';
+        background-color: transparent;
+        height: 1px;
+        width: 0px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+
+      &:hover:after {
+        width: 100%;
+        background-color: $purple;
+      }
+    }
+
+    a {
+      font-size: 70%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
