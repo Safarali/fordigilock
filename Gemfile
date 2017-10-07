@@ -11,7 +11,6 @@ gem 'bootstrap', '~> 4.0.0.beta'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'jquery-rails'
 gem "font-awesome-rails"
-gem "rails_12factor"
 
 
 
