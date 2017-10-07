@@ -6,5 +6,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_template 'static_pages/home'
     assert_select "a[href=?]", 'https://github.com/Safarali/fordigilock'
     assert_select "title", full_title("Project")
+    get signup_path
+    assert_select "title", full_title('Sign Up')
   end
 end
