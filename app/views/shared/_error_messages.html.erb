@@ -1,9 +1,15 @@
 <% if @user.errors.any? %>
-    <div class="alert alert-danger">
-        <ul class="error-messages">
-            <% @user.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-        </ul>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8">
+                <div class="alert alert-danger">
+                    <ul class="error-messages">
+                        <% @user.errors.full_messages.each do |msg| %>
+                            <li><%= msg %></li>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 <% end %>

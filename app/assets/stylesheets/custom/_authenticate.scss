@@ -75,3 +75,12 @@ section.user-forms {
 ::-moz-placeholder {  /* Firefox 19+ */
       font-size: 85% !important;
 }
+
+
+/* Alerts */
+
+.alert.alert-danger,
+.alert.alert-success,
+.alert.alert-info {
+  font-size: 70%;
+}
