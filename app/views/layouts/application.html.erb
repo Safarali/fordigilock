@@ -9,7 +9,15 @@
   </head>
 
   <body>
-    <%= render 'partials/topnav' %>
+    <%= render 'shared/topnav' %>
+    <div class="container">
+        <% flash.each do |message_type, message| %>
+            <div class="alert alert-<%= message_type %>"><%= message %></div>
+       <% end %>
+    </div>
     <%= yield %>
+    <div class="container">
+        <%= debug(params) if Rails.env.development? %>
+    </div>
   </body>
 </html>

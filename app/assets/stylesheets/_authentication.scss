@@ -1,0 +1,77 @@
+/* User sign up, sign in, forget password */
+section.user-forms {
+  padding: 70px 0;
+
+  h3 {
+    font-size: 125%;
+    color: $default-color;
+    font-weight: 400;
+
+    &:after {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: block;
+      content: ' ';
+      height: 2px;
+      width: 60px;
+      background-color: $purple;
+    }
+  }
+}
+
+
+/* Form Button */
+
+.btn-form {
+  width: 100%;
+  background-color: $purple;
+  border: none;
+  padding: 10px 0;
+  color: $white;
+  border-radius: 5px;
+  font-size: 90%;
+  transition: background-color 0.8s;
+
+  &:active, &:hover, &:focus {
+    outline: none;
+    background-color: $purple-light;
+  }
+}
+
+
+/* Error Messages */
+
+.error-messages {
+  list-style-type: decimal;
+
+  li {
+    font-size: 70%;
+  }
+}
+
+.field_with_errors {
+  .form-control {
+    border-color: red;
+  }
+}
+/* Overriding styles of forms*/
+.form-control:focus {
+  border-color: $purple-light;
+}
+
+.form-control {
+  font-size: 70%;
+  padding: 10px;
+  color: $default-color;
+}
+
+::-webkit-input-placeholder {
+   font-size: 85% !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+      font-size: 85% !important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 85% !important;
+}

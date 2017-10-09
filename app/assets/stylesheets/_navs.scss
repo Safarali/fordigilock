@@ -3,6 +3,7 @@
 nav {
   height: 60px;
   overflow: hidden;
+  border-bottom: 1px solid $purple-light;
 
   .logo {
     height: 45px;
@@ -36,7 +37,7 @@ nav {
 
       &:hover:after {
         width: 100%;
-        background-color: $purple;
+        background-color: $default-color;
       }
     }
 

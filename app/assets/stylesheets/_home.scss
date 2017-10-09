@@ -5,7 +5,6 @@ header.hero-img {
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
-  border-top: 1px solid white;
   position: relative;
 }
 
@@ -35,7 +34,7 @@ header.hero-img {
     transition: background-color 0.8s;
 
     &:hover {
-      background-color: #a98af7;
+      background-color: $purple-light;
     }
   }
 
@@ -44,4 +43,13 @@ header.hero-img {
     margin-right: 5px;
     font-size: 20px;
   }
+}
+
+
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
 }

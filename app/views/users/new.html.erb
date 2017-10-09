@@ -1,3 +1,35 @@
 <% provide(:title, "Sign Up") %>
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<section class="user-forms">
+    <div class="container">
+        <%= render 'shared/error_messages' %>
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Sign up</h3>
+                        <%= form_for(@user, url: signup_path) do |f| %>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <%= f.text_field :first_name, class: "form-control form-control-lg", placeholder: "First name", autofocus: true, required: true %>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <%= f.text_field :last_name, class: "form-control form-control-lg", placeholder: "Last name", required: true %>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <%= f.email_field :email, class: "form-control form-control-lg", placeholder: "Email", required: true %>
+                            </div>
+                            <div class="form-group">
+                                <%= f.password_field :password, class: "form-control form-control-lg", placeholder: "Password", required: true %>
+                            </div>
+                            <div class="form-group">
+                                <%= f.password_field :password_confirmation, class: "form-control form-control-lg", placeholder: "Password confirmation", required: true %>
+                            </div>
+                            <%= f.submit "Create my account", class: "btn-form" %>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
