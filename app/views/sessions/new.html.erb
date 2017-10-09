@@ -13,6 +13,10 @@
                             <div class="form-group">
                                 <%= f.password_field :password, class: "form-control form-control-lg", placeholder: "Password", required: true %>
                             </div>
+                            <%= f.label :remember_me, class: "checkbox inline" do %>
+                                <%= f.check_box :remember_me %>
+                                <span>Remember me</span>
+                          <% end %>
                             <%= f.submit "Log in", class: "btn-form" %>
                         <% end %>
                     </div>

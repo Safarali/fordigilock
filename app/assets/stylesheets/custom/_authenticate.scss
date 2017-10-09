@@ -39,6 +39,18 @@ section.user-forms {
 }
 
 
+/* Remember be checkbox */
+
+.checkbox {
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    font-size: 70%;
+    font-weight: normal;
+  }
+}
+
 /* Error Messages */
 
 .error-messages {
