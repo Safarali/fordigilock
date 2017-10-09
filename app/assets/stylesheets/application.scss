@@ -16,8 +16,8 @@
  @import "font-awesome";
  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 
- @import "./global";
- @import "./navs";
- @import "./home";
- @import "./user";
- @import "./authentication";
+ @import "custom/global";
+ @import "custom/nav";
+ @import "custom/home";
+ @import "custom/user";
+ @import "custom/authenticate";
