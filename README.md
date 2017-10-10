@@ -1,6 +1,6 @@
-# User Authentication built in Ruby on rails
+# User Authentication built in Ruby on Rails
 
 ## Getting started
-Please visit https://fordigilock.herokuapp.com/signup
-You will receive confirmation email within 3 minutes
-Follow the email to activate your account
+#### Please visit https://fordigilock.herokuapp.com/signup
+#### You will receive confirmation email within 3 minutes
+#### Follow the email to activate your account
