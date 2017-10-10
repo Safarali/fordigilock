@@ -1,0 +1,4 @@
+Hi <%= @user.first_name %>
+
+Thank you for signing up. Please visit the link below to activate your account:
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
