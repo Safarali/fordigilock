@@ -1,25 +1,6 @@
 # User Authentication built in Ruby on rails
 
 ## Getting started
-To get started with the app, clone the repo and then install the needed gems:
-
-```
-$ bundle install --without production
-```
-
-Next, migrate the database:
-
-```
-$ rails db:migrate
-```
-
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
+Please visit https://fordigilock.herokuapp.com/signup
+You will receive confirmation email within 3 minutes
+Follow the email to activate your account
